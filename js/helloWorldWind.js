@@ -94,10 +94,10 @@ function addEarthLayers() {
 function addMarsLayers() {
     wwd.removeAllLayers();
 
-    // Add Mars MOLA imagery layer (from WMS)
+    // Add Mars MOLA imagery layer (from WorldWind)
     var marsLayer = new WorldWind.WmsLayer({
-        service: "https://planetserver.jsc.nasa.gov/wms",
-        layerNames: "mars_mola",
+        service: "https://worldwind26.arc.nasa.gov/wms",
+        layerNames: "MOLA",
         title: "Mars MOLA",
         sector: new WorldWind.Sector(-90, 90, -180, 180),
         coordinateSystem: "MOLA",
